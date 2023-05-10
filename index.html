@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <!-- <link rel="stylesheet" href="./styles/reset.css"> -->
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body>
+    <header>
+        <img src="./img/logo alura.svg" alt="Logo Alura"> 
+    </header>
+    <main>
+        <section class="encriptar">
+            <!-- ecriptar -->
+            <textarea id="introducir-texto" class="textarea" type="mensaje" cols="50" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="aviso">
+                <p>Solo se aceptan letras y sin acentos</p>
+            </div>
+            <div class="botones">
+                <button id="boton_ecriptar" class="boton_ecriptar">Ecriptar </button>
+                <button id="boton_desecriptar" class="boton_desecriptar">Desencriptar </button>
+            </div>
+        </section>
+
+        <!-- Desencriptar -->
+        <section class="tablero">
+            <div id="con-resultado">
+                <h2 id="titulo-resultado"></h2>
+            </div>
+            <div id="toy" class="conteinerImg">
+                <img src="img/Muñeco.svg" alt="Muñeco">
+                <p class="text1"><strong>Ningún texto mensaje fue encontrado</strong></p>
+            </div>
+            <textarea id="resultado" readonly> </textarea>
+            <button id="btn-copiar" class="btn-copiar">Copiar</button>
+        </section>
+    </main>
+
+    <footer>Ecriptador desarrollado por Eric Prz.</footer>
+
+    <script src="./JS/encriptador.js"></script>
+    <script src="./JS/desencriptador.js"></script>
+    <script src="./JS/copiar.js"></script>
+
+
+    
+
+</body>
+</html>
